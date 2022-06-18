@@ -24,8 +24,7 @@ module Interview
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
     config.autoloader = :classic
-    config.eager_load_paths += Dir[Rails.root.join('app/contexts/**/*.rb')].each { |rb| require rb }
-
+    config.eager_load_paths += Dir[Rails.root.join("app/contexts/**/*.rb")].each { |rb| require rb }
 
     # Configuration for the application, engines, and railties goes here.
     #

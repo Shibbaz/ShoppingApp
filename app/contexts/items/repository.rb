@@ -11,8 +11,8 @@ module Contexts
         @adapter.create(name: name, description: description, price: price, quantity: quantity, status: status)
       end
 
-      def update(name:, description:, price:, quantity:, status:)
-        @adapter.update(name: name, description: description, price: price, quantity: quantity, status: status)
+      def update(id:, name:, description:, price:, quantity:, status:)
+        @adapter.find(id).update(name: name, description: description, price: price, quantity: quantity, status: status)
       end
 
       def delete(id:)

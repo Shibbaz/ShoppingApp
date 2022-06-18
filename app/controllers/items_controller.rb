@@ -10,7 +10,7 @@ class ItemsController < ApplicationController
   end
 
   def update
-    @item = Contexts::Items::Repository.new.update(name: params[:name], description: params[:description], price: params[:price], quantity: params[:quantity], status: params[:status])
+    @item = Contexts::Items::Repository.new.update(id: params[:id], name: params[:name], description: params[:description], price: params[:price], quantity: params[:quantity], status: params[:status])
     render json: @item
   end
 

@@ -21,7 +21,6 @@ gem "puma", "~> 5.0"
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 gem "faker", git: "https://github.com/faker-ruby/faker.git", branch: "master"
-gem "factory_bot"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.4.4", require: false
@@ -34,6 +33,7 @@ group :development, :test do
   gem "pry", "~> 0.13.1"
   gem "standard"
   gem "rspec-rails"
+  gem "factory_bot_rails"
 end
 
 group :development do
